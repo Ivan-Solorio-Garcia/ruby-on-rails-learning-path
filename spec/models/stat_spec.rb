@@ -8,7 +8,7 @@ RSpec.describe Stat, type: :model do
     weight:40,
     height:40,
     pokemon_id:132,
-    sprite:"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png")
+    sprite:"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemons/132.png")
   end
 
   let!(:stat) do

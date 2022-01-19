@@ -1,1 +1,1 @@
-json.partial! "pokemons/pokemon", pokemon: @pokemon
+json.partial! "pokemons/pokemons", pokemon: @pokemon

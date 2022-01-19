@@ -23,12 +23,24 @@ gem "turbo-rails"
 
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
-
+#To create  factories to mock in tests
 gem "factory_bot_rails"
+
+#Bootstrap frame work
+gem 'bootstrap'
+
+#Jquery framework
+gem 'jquery-rails'
+
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+#Rest client gem [https://github.com/rest-client/rest-client]
+gem "rest-client"
+
+#Gem to debug [https://github.com/deivid-rodriguez/byebug]
+gem "byebug"
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 

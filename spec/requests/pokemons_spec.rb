@@ -63,7 +63,7 @@ RSpec.describe "/pokemons", type: :request do
         }.to change(Pokemon, :count).by(1)
       end
 
-      it "redirects to the created pokemon" do
+      it "redirects to the created pokemons" do
         post pokemons_url, params: { pokemon: valid_attributes }
         expect(response).to redirect_to(pokemon_url(Pokemon.last))
       end
@@ -89,14 +89,14 @@ RSpec.describe "/pokemons", type: :request do
         skip("Add a hash of attributes valid for your model")
       }
 
-      it "updates the requested pokemon" do
+      it "updates the requested pokemons" do
         pokemon = Pokemon.create! valid_attributes
         patch pokemon_url(pokemon), params: { pokemon: new_attributes }
         pokemon.reload
         skip("Add assertions for updated state")
       end
 
-      it "redirects to the pokemon" do
+      it "redirects to the pokemons" do
         pokemon = Pokemon.create! valid_attributes
         patch pokemon_url(pokemon), params: { pokemon: new_attributes }
         pokemon.reload
@@ -114,7 +114,7 @@ RSpec.describe "/pokemons", type: :request do
   end
 
   describe "DELETE /destroy" do
-    it "destroys the requested pokemon" do
+    it "destroys the requested pokemons" do
       pokemon = Pokemon.create! valid_attributes
       expect {
         delete pokemon_url(pokemon)

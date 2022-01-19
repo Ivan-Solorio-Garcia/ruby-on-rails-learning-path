@@ -8,6 +8,7 @@ class PokemonsController < ApplicationController
 
   # GET /pokemons/1 or /pokemons/1.json
   def show
+
   end
 
   # GET /pokemons/new

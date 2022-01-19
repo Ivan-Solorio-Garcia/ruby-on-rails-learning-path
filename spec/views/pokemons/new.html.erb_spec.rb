@@ -10,18 +10,18 @@ RSpec.describe "pokemons/new", type: :view do
     ))
   end
 
-  it "renders new pokemon form" do
+  it "renders new pokemons form" do
     render
 
     assert_select "form[action=?][method=?]", pokemons_path, "post" do
 
-      assert_select "input[name=?]", "pokemon[name]"
+      assert_select "input[name=?]", "pokemons[name]"
 
-      assert_select "input[name=?]", "pokemon[weight]"
+      assert_select "input[name=?]", "pokemons[weight]"
 
-      assert_select "input[name=?]", "pokemon[height]"
+      assert_select "input[name=?]", "pokemons[height]"
 
-      assert_select "input[name=?]", "pokemon[pokemon_id]"
+      assert_select "input[name=?]", "pokemons[pokemon_id]"
     end
   end
 end

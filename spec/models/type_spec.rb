@@ -9,7 +9,7 @@ RSpec.describe Type, type: :model do
       weight:40,
       height:40,
       pokemon_id:132,
-      sprite:"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png")
+      sprite:"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemons/132.png")
     @type=Type.create(name:"test",pokemon_id: @pokemon.id)
     @pokemon.types <<  @type
   end
