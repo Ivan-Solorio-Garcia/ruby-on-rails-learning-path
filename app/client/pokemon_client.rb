@@ -1,7 +1,7 @@
 require 'rest-client'
 class PokemonClient < ApplicationController
     @@is_loaded = false
-    @@url = 'https://pokeapi.co/api/v2/pokemons'
+    @@url = 'https://pokeapi.co/api/v2/pokemon'
 
     def self.is_loaded
         @@is_loaded

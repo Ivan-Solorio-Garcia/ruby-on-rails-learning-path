@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  root 'pokemons#index'
+  get 'admin',:to => "pokemons#index"
+  get 'access/menu'
+  get 'access/login'
+  post "access/attempt_login"
+  get 'access/logout'
+  resources :users
   resources :types
   resources :stats
   resources :abilities

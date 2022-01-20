@@ -10,7 +10,11 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+  <body >
+  <%= render partial: 'shared/navbar' %>
+  <div class="container">
     <%= yield %>
+  </div>
+
   </body>
 </html>
